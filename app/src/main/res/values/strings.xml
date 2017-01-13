@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MimoniTest</string>
+
+    <string name="name_personal_fragment">Para ti</string>
+    <string name="name_accommodation_fragment">Alojamientos</string>
+    <string name="name_experiencies_fragment">Experiencias</string>
+    <string name="name_places_fragment">Lugares</string>
 </resources>
