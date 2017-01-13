@@ -1,12 +1,13 @@
-package brauliomendez.com.mimonitest;
+package brauliomendez.com.mimonitest.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import brauliomendez.com.mimonitest.R;
+
 public class MainActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
