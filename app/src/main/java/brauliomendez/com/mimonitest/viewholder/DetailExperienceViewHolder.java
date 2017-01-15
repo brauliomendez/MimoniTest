@@ -14,12 +14,12 @@ import mx.leo.easyrecycler.viewholder.EasyItemViewHolder;
  * Created by Braulio on 14/01/2017.
  */
 
-public class DetailExperiencesViewHolder extends EasyItemViewHolder {
+public class DetailExperienceViewHolder extends EasyItemViewHolder {
 
     @BindView(R.id.detail_experience_image_view) ImageView detailExperienceImageView;
     @BindView(R.id.detail_name_text_view) TextView detailNameTextView;
 
-    public DetailExperiencesViewHolder(View view) {
+    public DetailExperienceViewHolder(View view) {
         super(view);
         ButterKnife.bind(this, view);
     }

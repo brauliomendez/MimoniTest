@@ -25,7 +25,7 @@
             android:layout_toLeftOf="@+id/information_experience_button"
             android:layout_toStartOf="@id/name_experience_text_view"
             android:textColor="@android:color/black"
-            android:textSize="18sp"/>
+            android:textSize="@dimen/font_large"/>
 
         <Button
             android:id="@+id/information_experience_button"
@@ -39,7 +39,7 @@
     </RelativeLayout>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/experiences_item_recycler_view"
+        android:id="@+id/main_item_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"

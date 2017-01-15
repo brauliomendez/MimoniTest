@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import brauliomendez.com.mimonitest.R;
-import brauliomendez.com.mimonitest.fragment.MessagesFragment;
+import brauliomendez.com.mimonitest.fragment.MessageFragment;
 import brauliomendez.com.mimonitest.fragment.ProfileFragment;
 import brauliomendez.com.mimonitest.fragment.ServicesFragment;
 import butterknife.BindView;
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 .commit();
     }
 
-    private void setUpBottomNavigationView(){
+    private void setUpBottomNavigationView() {
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.
                 OnNavigationItemSelectedListener() {
             @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                         addFragment(new ServicesFragment());
                         break;
                     case R.id.action_messages:
-                        addFragment(new MessagesFragment());
+                        addFragment(new MessageFragment());
                         break;
                     case R.id.action_profile:
                         addFragment(new ProfileFragment());

@@ -25,7 +25,7 @@ public class ServicesFragment extends Fragment {
 
     @Nullable @Override public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                                                  @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_services, container, false);
+        View view = inflater.inflate(R.layout.fragment_service, container, false);
         ButterKnife.bind(this, view);
         return view;
     }
@@ -40,8 +40,8 @@ public class ServicesFragment extends Fragment {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getActivity().getSupportFragmentManager());
         adapter.addFragment(new PersonalFragment(), getResources().getString(R.string.name_personal_fragment));
         adapter.addFragment(new AccommodationFragment(), getResources().getString(R.string.name_accommodation_fragment));
-        adapter.addFragment(new ExperiencesFragment(), getResources().getString(R.string.name_experiencies_fragment));
-        adapter.addFragment(new PlacesFragment(), getResources().getString(R.string.name_places_fragment));
+        adapter.addFragment(new ExperienceFragment(), getResources().getString(R.string.name_experiencies_fragment));
+        adapter.addFragment(new PlaceFragment(), getResources().getString(R.string.name_places_fragment));
         viewPager.setAdapter(adapter);
     }
 

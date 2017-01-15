@@ -18,10 +18,11 @@ public class PlaceAdapter extends EasyAdapter<PlaceViewHolder, Place> {
 
     @NotNull @Override public PlaceViewHolder createHolder(ViewGroup viewGroup, int i) {
         return new PlaceViewHolder(LayoutInflater.from(viewGroup.getContext()).
-                inflate(R.layout.item_experiences, viewGroup, false));
+                inflate(R.layout.layout_main_adapter, viewGroup, false));
     }
 
     @Override public void onBindItemViewHolder(PlaceViewHolder holder, Place place, int i) {
-        holder.bindItem(place, place.getCityPlaces());
+        holder.bindItem(place);
+        holder.setUpRecyclerView(place.getCityPlaces());
     }
 }
