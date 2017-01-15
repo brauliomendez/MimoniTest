@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.MainActivity">
+    <item
+        android:id="@+id/action_explore"
+        android:enabled="true"
+        android:title="@string/text_explore"
+        android:icon="@drawable/search"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_messages"
+        android:enabled="true"
+        android:title="@string/text_messages"
+        android:icon="@drawable/messages"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:title="@string/text_profile"
+        android:icon="@drawable/profile"
+        app:showAsAction="ifRoom" />
+</menu>

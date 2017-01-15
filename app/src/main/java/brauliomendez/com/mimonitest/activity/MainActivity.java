@@ -1,9 +1,13 @@
 package brauliomendez.com.mimonitest.activity;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import brauliomendez.com.mimonitest.R;
 import brauliomendez.com.mimonitest.adapter.ViewPagerAdapter;
@@ -18,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.main_view_pager) ViewPager viewPager;
     @BindView(R.id.main_tab_layout) TabLayout tabLayout;
+    @BindView(R.id.main_bottom_navigation_view) BottomNavigationView bottomNavigationView;
 
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         setUpViewPager();
         setUpTabLayout();
+        setUpBottomNavigationView();
     }
 
     private void setUpViewPager() {
@@ -38,5 +44,25 @@ public class MainActivity extends AppCompatActivity {
 
     private void setUpTabLayout() {
         tabLayout.setupWithViewPager(viewPager);
+    }
+
+    private void setUpBottomNavigationView(){
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.
+                OnNavigationItemSelectedListener() {
+            @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.action_explore:
+                        Toast.makeText(MainActivity.this, ".l.", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.action_messages:
+                        Toast.makeText(MainActivity.this, ".l.", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.action_profile:
+                        Toast.makeText(MainActivity.this, ".l.", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+                return false;
+            }
+        });
     }
 }

@@ -13,4 +13,11 @@
 
     <!-- item_experiences Strings -->
     <string name="text_view_more">Ver más</string>
+
+    <!-- menu_main Strings -->
+    <string name="text_explore">Explorar</string>
+    <string name="text_saved">Guardados</string>
+    <string name="text_travels">Viajes</string>
+    <string name="text_messages">Mensajes</string>
+    <string name="text_profile">Perfil</string>
 </resources>
