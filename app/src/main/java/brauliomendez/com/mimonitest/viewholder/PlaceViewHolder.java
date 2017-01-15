@@ -25,15 +25,18 @@ public class PlaceViewHolder extends EasyViewHolder {
 
     @BindView(R.id.information_experience_button) Button nameExperienceButton;
     @BindView(R.id.name_experience_text_view) TextView nameExperienceTextView;
-    @BindView(R.id.experiences_item_recycler_view) RecyclerView recyclerView;
+    @BindView(R.id.main_item_recycler_view) RecyclerView recyclerView;
 
     public PlaceViewHolder(View view) {
         super(view);
         ButterKnife.bind(this, view);
     }
 
-    public void bindItem(Place place, List<CityPlace> places) {
+    public void bindItem(Place place) {
         nameExperienceTextView.setText(place.getCity());
+    }
+
+    public void setUpRecyclerView(List<CityPlace> places) {
         DetailPlaceAdapter placeAdapter = new DetailPlaceAdapter();
         recyclerView.setLayoutManager(new LinearLayoutManager(recyclerView.getContext(),
                 LinearLayoutManager.HORIZONTAL, false));

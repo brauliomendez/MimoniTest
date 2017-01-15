@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import brauliomendez.com.mimonitest.R;
-import brauliomendez.com.mimonitest.adapter.DetailExperiencesAdapter;
+import brauliomendez.com.mimonitest.adapter.DetailExperienceAdapter;
 import brauliomendez.com.mimonitest.model.CityExperience;
 import brauliomendez.com.mimonitest.model.Experience;
 import butterknife.BindView;
@@ -21,20 +21,24 @@ import mx.leo.easyrecycler.viewholder.EasyItemViewHolder;
  * Created by Braulio on 14/01/2017.
  */
 
-public class ExperiencesViewHolder extends EasyItemViewHolder {
+public class ExperienceViewHolder extends EasyItemViewHolder {
 
     @BindView(R.id.information_experience_button) Button nameExperienceButton;
     @BindView(R.id.name_experience_text_view) TextView nameExperienceTextView;
-    @BindView(R.id.experiences_item_recycler_view) RecyclerView recyclerView;
+    @BindView(R.id.main_item_recycler_view) RecyclerView recyclerView;
 
-    public ExperiencesViewHolder(View view) {
+    public ExperienceViewHolder(View view) {
         super(view);
         ButterKnife.bind(this, view);
     }
 
-    public void bindItem(Experience experience, List<CityExperience> experiences) {
+    public void bindItem(Experience experience) {
         nameExperienceTextView.setText(experience.getCity());
-        DetailExperiencesAdapter experiencesAdapter = new DetailExperiencesAdapter();
+
+    }
+
+    public void setUpDetailRecyclerView(List<CityExperience> experiences) {
+        DetailExperienceAdapter experiencesAdapter = new DetailExperienceAdapter();
         recyclerView.setLayoutManager(new LinearLayoutManager(recyclerView.getContext(),
                 LinearLayoutManager.HORIZONTAL, false));
         recyclerView.setAdapter(experiencesAdapter);

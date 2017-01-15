@@ -17,7 +17,7 @@ import mx.leo.easyrecycler.viewholder.EasyViewHolder;
 public class DetailPlaceViewHolder extends EasyViewHolder {
 
     @BindView(R.id.detail_place_image_view) ImageView detailPlaceImageView;
-    @BindView(R.id.autor_text_view) TextView detailAutorTextView;
+    @BindView(R.id.detail_autor_text_view) TextView detailAutorTextView;
     @BindView(R.id.detail_job_text_view) TextView detailJobTextView;
 
     public DetailPlaceViewHolder(View view) {

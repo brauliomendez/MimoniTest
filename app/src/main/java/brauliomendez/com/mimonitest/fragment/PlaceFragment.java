@@ -28,13 +28,13 @@ import mx.leo.easyrecycler.util.extensions.RecyclerViewExtensionsKt;
  * Created by Braulio on 13/01/2017.
  */
 
-public class PlacesFragment extends Fragment {
+public class PlaceFragment extends Fragment {
 
-    @BindView(R.id.places_recycler_view) RecyclerView recyclerView;
+    @BindView(R.id.place_recycler_view) RecyclerView recyclerView;
 
     @Nullable @Override public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                                                  @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_places, container, false);
+        View view = inflater.inflate(R.layout.fragment_place, container, false);
         ButterKnife.bind(this, view);
         return view;
     }

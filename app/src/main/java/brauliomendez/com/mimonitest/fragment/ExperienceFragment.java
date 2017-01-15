@@ -15,7 +15,7 @@ import com.google.gson.Gson;
 import java.util.ArrayList;
 
 import brauliomendez.com.mimonitest.R;
-import brauliomendez.com.mimonitest.adapter.ExperiencesAdapter;
+import brauliomendez.com.mimonitest.adapter.ExperienceAdapter;
 import brauliomendez.com.mimonitest.model.Experience;
 import brauliomendez.com.mimonitest.model.ExperienceResponse;
 import brauliomendez.com.mimonitest.util.JsonUtil;
@@ -28,13 +28,13 @@ import mx.leo.easyrecycler.util.extensions.RecyclerViewExtensionsKt;
  * Created by Braulio on 13/01/2017.
  */
 
-public class ExperiencesFragment extends Fragment {
+public class ExperienceFragment extends Fragment {
 
-    @BindView(R.id.experiences_recycler_view) RecyclerView recyclerView;
+    @BindView(R.id.experience_recycler_view) RecyclerView recyclerView;
 
     @Nullable @Override public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                                                  @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_experiencies, container, false);
+        View view = inflater.inflate(R.layout.fragment_experience, container, false);
         ButterKnife.bind(this, view);
         return view;
     }
@@ -45,7 +45,7 @@ public class ExperiencesFragment extends Fragment {
     }
 
     private void setUpRecyclerView() {
-        ExperiencesAdapter experiencesAdapter = new ExperiencesAdapter();
+        ExperienceAdapter experiencesAdapter = new ExperienceAdapter();
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(experiencesAdapter);
         experiencesAdapter.addItems((ArrayList<Experience>) getServices(getActivity()).getExperiences());

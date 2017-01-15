@@ -12,7 +12,7 @@
     <string name="name_experiences_json">experiences.json</string>
     <string name="name_places_json">places.json</string>
 
-    <!-- item_experiences Strings -->
+    <!-- layout_main_adapter Strings -->
     <string name="text_view_more">Ver más</string>
 
     <!-- menu_main Strings -->
