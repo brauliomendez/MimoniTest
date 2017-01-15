@@ -1,0 +1,24 @@
+{
+  "accommodation": [
+    {
+      "image": "valladolid",
+      "price": "$53",
+      "name": "Habitacion privada en Barcelona"
+    },
+    {
+      "image": "valladolid",
+      "price": "$69",
+      "name": "Casa entera en Madrid"
+    },
+    {
+      "image": "valladolid",
+      "price": "$123",
+      "name": "Habitacion compartida en Valladolid"
+    },
+    {
+      "image": "valladolid",
+      "price": "$103",
+      "name": "Habitacion privada en Sevilla"
+    }
+  ]
+}

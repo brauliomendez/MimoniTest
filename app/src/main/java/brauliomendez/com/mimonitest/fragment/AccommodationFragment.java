@@ -1,5 +1,6 @@
 package brauliomendez.com.mimonitest.fragment;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -9,8 +10,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.gson.Gson;
+
+import java.util.ArrayList;
+
 import brauliomendez.com.mimonitest.R;
 import brauliomendez.com.mimonitest.adapter.AccommodationAdapter;
+import brauliomendez.com.mimonitest.model.Accommodation;
+import brauliomendez.com.mimonitest.model.AccommodationResponse;
+import brauliomendez.com.mimonitest.util.JsonUtil;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import mx.leo.easyrecycler.util.RecyclerViewItemClickListener;
@@ -40,10 +48,16 @@ public class AccommodationFragment extends Fragment {
         AccommodationAdapter accommodationAdapter = new AccommodationAdapter();
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(accommodationAdapter);
+        accommodationAdapter.addItems((ArrayList<Accommodation>) getServices(getActivity()).getAccommodation());
         RecyclerViewExtensionsKt.OnItemClickListener(recyclerView, new RecyclerViewItemClickListener.OnItemClickListener() {
             @Override public void onItemClick(View view, Integer integer) {
 
             }
         });
+    }
+
+    public AccommodationResponse getServices(Activity activity) {
+        return new Gson().fromJson(JsonUtil.getDataFromAssets(activity, activity.getResources().
+                getString(R.string.name_accommodation_json)), AccommodationResponse.class);
     }
 }

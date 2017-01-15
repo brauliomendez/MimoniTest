@@ -1,0 +1,104 @@
+{
+  "experiences": [
+    {
+      "city": "Detroit",
+      "city_experiences": [
+        {
+          "image": "detroit",
+          "title": "Singing & karaoke experience",
+          "price": 25
+        },
+        {
+          "image": "detroit",
+          "title": "Coaching & community experience",
+          "price": 70
+        },
+        {
+          "image": "detroit",
+          "title": "Neighborhood & community",
+          "price": 126
+        },
+        {
+          "image": "detroit",
+          "title": "Live music & rock",
+          "price": 263
+        }
+      ]
+    },
+    {
+      "city": "Paris",
+      "city_experiences": [
+        {
+          "image": "paris",
+          "title": "Asian food & culinary",
+          "price": 228
+        },
+        {
+          "image": "paris",
+          "title": "Street art & workshop",
+          "price": 137
+        },
+        {
+          "image": "paris",
+          "title": "Cheese & cooking",
+          "price": 218
+        },
+        {
+          "image": "paris",
+          "title": "Music production & clubbing",
+          "price": 218
+        }
+      ]
+    },
+    {
+      "city": "Seúl",
+      "city_experiences": [
+        {
+          "image": "seul",
+          "title": "Fire spinning & flow jam experience",
+          "price": 18
+        },
+        {
+          "image": "seul",
+          "title": "Neighborhood & drawing",
+          "price": 141
+        },
+        {
+          "image": "seul",
+          "title": "Vitage shops & music",
+          "price": 132
+        },
+        {
+          "image": "seul",
+          "title": "Perfume & crafting experience",
+          "price": 61
+        }
+      ]
+    },
+    {
+      "city": "Los Ángeles",
+      "city_experiences": [
+        {
+          "image": "angeles",
+          "title": "Clubbing & neigborhood",
+          "price": 245
+        },
+        {
+          "image": "angeles",
+          "title": "Farming & gardening",
+          "price": 137
+        },
+        {
+          "image": "angeles",
+          "title": "Healthy food & farmers market",
+          "price": 139
+        },
+        {
+          "image": "paris",
+          "title": "Music production & clubbing",
+          "price": 218
+        }
+      ]
+    }
+  ]
+}
