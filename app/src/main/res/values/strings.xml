@@ -10,6 +10,7 @@
     <!-- Json Strings -->
     <string name="name_accommodation_json">accommodation.json</string>
     <string name="name_experiences_json">experiences.json</string>
+    <string name="name_places_json">places.json</string>
 
     <!-- item_experiences Strings -->
     <string name="text_view_more">Ver más</string>
