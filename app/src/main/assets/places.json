@@ -1,0 +1,104 @@
+{
+  "places": [
+    {
+      "city": "La Habana",
+      "city_places": [
+        {
+          "image": "detroit",
+          "autor": "Carlos Lechuga",
+          "job": "Cineasta"
+        },
+        {
+          "image": "detroit",
+          "autor": "Harold Ferrer",
+          "job": "Fotógrafo"
+        },
+        {
+          "image": "detroit",
+          "autor": "Rosemary Rogriguez",
+          "job": "Artista"
+        },
+        {
+          "image": "detroit",
+          "autor": "Rosario Cardenas",
+          "job": "Bailarina"
+        }
+      ]
+    },
+    {
+      "city": "San Francisco",
+      "city_places": [
+        {
+          "image": "detroit",
+          "autor": "Chanda Stacker",
+          "job": "Blogger"
+        },
+        {
+          "image": "detroit",
+          "autor": "Janet Lees",
+          "job": "Cofundadora de SF"
+        },
+        {
+          "image": "detroit",
+          "autor": "Paul Einbund",
+          "job": "Musico"
+        },
+        {
+          "image": "detroit",
+          "autor": "Sarah Harrison",
+          "job": "Adiestrador"
+        }
+      ]
+    },
+    {
+      "city": "Detroit",
+      "city_places": [
+        {
+          "image": "detroit",
+          "autor": "Nelson T. Sanders Jr.",
+          "job": "Sastre"
+        },
+        {
+          "image": "detroit",
+          "autor": "Kate Daughdrill",
+          "job": "Granjero"
+        },
+        {
+          "image": "detroit",
+          "autor": "Marsha Music",
+          "job": "Historiadora de música"
+        },
+        {
+          "image": "detroit",
+          "autor": "Marc Chruch",
+          "job": "Amante de los coches"
+        }
+      ]
+    },
+    {
+      "city": "Seúl",
+      "city_places": [
+        {
+          "image": "detroit",
+          "autor": "Myungshin Lee",
+          "job": "Diseñador de modas"
+        },
+        {
+          "image": "detroit",
+          "autor": "Yo-Yong Lee",
+          "job": "Propietario de restaurantes"
+        },
+        {
+          "image": "detroit",
+          "autor": "Wook J. Lee",
+          "job": "Productor de TV"
+        },
+        {
+          "image": "detroit",
+          "autor": "Kyuhyung Kim",
+          "job": "Fotógrafo"
+        }
+      ]
+    }
+  ]
+}
