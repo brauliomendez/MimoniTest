@@ -7,10 +7,15 @@
     <string name="name_experiencies_fragment">Experiencias</string>
     <string name="name_places_fragment">Lugares</string>
 
+    <!-- Profile Fragment Strings -->
+    <string name="text_name_user">Braulio Méndez</string>
+    <string name="text_edit_profile">Ver y editar perfil</string>
+
     <!-- Json Strings -->
     <string name="name_accommodation_json">accommodation.json</string>
     <string name="name_experiences_json">experiences.json</string>
     <string name="name_places_json">places.json</string>
+    <string name="name_profile_json">profile.json</string>
 
     <!-- layout_main_adapter Strings -->
     <string name="text_view_more">Ver más</string>
