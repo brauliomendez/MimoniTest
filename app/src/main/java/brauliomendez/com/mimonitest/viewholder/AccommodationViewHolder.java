@@ -27,8 +27,10 @@ public class AccommodationViewHolder extends EasyItemViewHolder {
         ButterKnife.bind(this, view);
     }
 
-    public void bindItem(Accommodation accommodation){
-        Glide.with(accommodationImageView.getContext()).load(accommodation.getImage()).into(accommodationImageView);
+    public void bindItem(Accommodation accommodation) {
+        int id = accommodationImageView.getResources().getIdentifier(accommodation.getImage(), "drawable",
+                accommodationImageView.getContext().getPackageName());
+        Glide.with(accommodationImageView.getContext()).load(id).into(accommodationImageView);
         priceTextView.setText(accommodation.getPrice());
         nameTextView.setText(accommodation.getName());
     }

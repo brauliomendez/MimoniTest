@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
     }
 
-    private void setUpTabLayout(){
+    private void setUpTabLayout() {
         tabLayout.setupWithViewPager(viewPager);
     }
 }
