@@ -4,6 +4,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import brauliomendez.com.mimonitest.R;
 import brauliomendez.com.mimonitest.model.CityPlace;
 import butterknife.BindView;
@@ -26,6 +28,8 @@ public class DetailPlaceViewHolder extends EasyViewHolder {
     }
 
     public void bindItem(CityPlace experience) {
+        Glide.with(detailPlaceImageView.getContext()).load(experience.getImage())
+                .centerCrop().into(detailPlaceImageView);
         detailAutorTextView.setText(experience.getAutor());
         detailJobTextView.setText(experience.getJob());
     }

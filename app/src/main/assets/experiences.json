@@ -4,22 +4,22 @@
       "city": "Detroit",
       "city_experiences": [
         {
-          "image": "detroit",
+          "image": "https://s-media-cache-ak0.pinimg.com/564x/0d/d3/10/0dd3103cbc0303fd1520ff5d62651b0e.jpg",
           "title": "Singing & karaoke experience",
           "price": 25
         },
         {
-          "image": "detroit",
+          "image": "https://s-media-cache-ak0.pinimg.com/236x/4c/b9/45/4cb945cb4dba8bc74abf3ad3f7184338.jpg",
           "title": "Coaching & community experience",
           "price": 70
         },
         {
-          "image": "detroit",
+          "image": "https://s-media-cache-ak0.pinimg.com/564x/2c/a3/3b/2ca33b18c7caa5c019ba9f7d70d4aafb.jpg",
           "title": "Neighborhood & community",
           "price": 126
         },
         {
-          "image": "detroit",
+          "image": "https://s-media-cache-ak0.pinimg.com/564x/dc/d8/9b/dcd89bdd2fea3b63d4e6c1bce9bb84ae.jpg",
           "title": "Live music & rock",
           "price": 263
         }
@@ -29,22 +29,22 @@
       "city": "Paris",
       "city_experiences": [
         {
-          "image": "paris",
+          "image": "https://s-media-cache-ak0.pinimg.com/564x/65/8f/76/658f76722b24377ab15b1bf363f9c314.jpg",
           "title": "Asian food & culinary",
           "price": 228
         },
         {
-          "image": "paris",
+          "image": "https://s-media-cache-ak0.pinimg.com/564x/a1/c6/35/a1c63572836a1b6c4b4167afe7dc080b.jpg",
           "title": "Street art & workshop",
           "price": 137
         },
         {
-          "image": "paris",
+          "image": "https://s-media-cache-ak0.pinimg.com/564x/90/80/bc/9080bcdcd2aeeffa608bb7bf6c9d1d62.jpg",
           "title": "Cheese & cooking",
           "price": 218
         },
         {
-          "image": "paris",
+          "image": "https://s-media-cache-ak0.pinimg.com/564x/bb/be/e7/bbbee7b370454acebba5cd49da8adc3a.jpg",
           "title": "Music production & clubbing",
           "price": 218
         }
@@ -54,22 +54,22 @@
       "city": "Seúl",
       "city_experiences": [
         {
-          "image": "seul",
+          "image": "https://s-media-cache-ak0.pinimg.com/564x/72/6d/a2/726da2b76b713906f24087e4326002eb.jpg",
           "title": "Fire spinning & flow jam experience",
           "price": 18
         },
         {
-          "image": "seul",
+          "image": "https://s-media-cache-ak0.pinimg.com/564x/26/06/cb/2606cb201ba34ba4eaa29778a75cbbd4.jpg",
           "title": "Neighborhood & drawing",
           "price": 141
         },
         {
-          "image": "seul",
+          "image": "https://s-media-cache-ak0.pinimg.com/564x/f9/5b/24/f95b240429a0cdca0968e4a169577c81.jpg",
           "title": "Vitage shops & music",
           "price": 132
         },
         {
-          "image": "seul",
+          "image": "https://s-media-cache-ak0.pinimg.com/564x/d3/1f/df/d31fdfebc06c770ef6787b0524246fcb.jpg",
           "title": "Perfume & crafting experience",
           "price": 61
         }
@@ -79,22 +79,22 @@
       "city": "Los Ángeles",
       "city_experiences": [
         {
-          "image": "angeles",
+          "image": "https://s-media-cache-ak0.pinimg.com/564x/0e/97/4a/0e974adc9379bd5981c7acaeffcd95e2.jpg",
           "title": "Clubbing & neigborhood",
           "price": 245
         },
         {
-          "image": "angeles",
+          "image": "https://s-media-cache-ak0.pinimg.com/564x/bc/90/97/bc9097125b0f0e152cf6febac4b362be.jpg",
           "title": "Farming & gardening",
           "price": 137
         },
         {
-          "image": "angeles",
+          "image": "https://s-media-cache-ak0.pinimg.com/564x/b5/d4/d6/b5d4d68719b756bb3a83af142c34d578.jpg",
           "title": "Healthy food & farmers market",
           "price": 139
         },
         {
-          "image": "paris",
+          "image": "https://s-media-cache-ak0.pinimg.com/236x/c2/a2/e7/c2a2e7f8e7d88c57074edae38097b1c5.jpg",
           "title": "Music production & clubbing",
           "price": 218
         }
