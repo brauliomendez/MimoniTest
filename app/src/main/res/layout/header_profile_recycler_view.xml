@@ -10,8 +10,6 @@
         android:id="@+id/name_user_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginStart="50dp"
         android:layout_marginTop="50dp"
         android:text="@string/text_name_user"
         android:textSize="@dimen/font_larger"
@@ -21,8 +19,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/name_user_textView"
-        android:layout_marginLeft="50dp"
-        android:layout_marginStart="50dp"
         android:layout_marginTop="25dp"
         android:text="@string/text_edit_profile"
         android:textSize="@dimen/font_normal"/>
@@ -30,8 +26,6 @@
     <ImageView
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginEnd="50dp"
         android:layout_centerInParent="true"
         android:src="@drawable/profile_user"
         android:layout_alignParentRight="true"
