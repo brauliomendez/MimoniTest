@@ -37,7 +37,7 @@ public class ServicesFragment extends Fragment {
     }
 
     private void setUpViewPager() {
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getActivity().getSupportFragmentManager());
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getChildFragmentManager());
         adapter.addFragment(new PersonalFragment(), getResources().getString(R.string.name_personal_fragment));
         adapter.addFragment(new AccommodationFragment(), getResources().getString(R.string.name_accommodation_fragment));
         adapter.addFragment(new ExperienceFragment(), getResources().getString(R.string.name_experiencies_fragment));

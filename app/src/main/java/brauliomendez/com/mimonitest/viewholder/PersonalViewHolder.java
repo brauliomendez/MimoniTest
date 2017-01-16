@@ -12,46 +12,46 @@ import java.util.List;
 
 import brauliomendez.com.mimonitest.R;
 import brauliomendez.com.mimonitest.activity.DetailInformationActivity;
-import brauliomendez.com.mimonitest.adapter.DetailPlaceAdapter;
-import brauliomendez.com.mimonitest.model.CityPlace;
-import brauliomendez.com.mimonitest.model.Place;
+import brauliomendez.com.mimonitest.adapter.DetailPersonalAdapter;
+import brauliomendez.com.mimonitest.model.Service;
+import brauliomendez.com.mimonitest.model.ServiceApp;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import mx.leo.easyrecycler.util.RecyclerViewItemClickListener;
 import mx.leo.easyrecycler.util.extensions.RecyclerViewExtensionsKt;
-import mx.leo.easyrecycler.viewholder.EasyViewHolder;
+import mx.leo.easyrecycler.viewholder.EasyItemViewHolder;
 
 /**
- * Created by Braulio on 15/01/2017.
+ * Created by Braulio on 16/01/2017.
  */
 
-public class PlaceViewHolder extends EasyViewHolder {
+public class PersonalViewHolder extends EasyItemViewHolder {
 
     @BindView(R.id.information_experience_button) Button nameExperienceButton;
     @BindView(R.id.name_experience_text_view) TextView nameExperienceTextView;
     @BindView(R.id.main_item_recycler_view) RecyclerView recyclerView;
 
-    public PlaceViewHolder(View view) {
+    public PersonalViewHolder(View view) {
         super(view);
         ButterKnife.bind(this, view);
     }
 
-    public void bindItem(Place place) {
-        nameExperienceTextView.setText(place.getCity());
+    public void bindItem(Service service) {
+        nameExperienceTextView.setText(service.getName());
     }
 
-    public void setUpRecyclerView(List<CityPlace> places) {
-        final DetailPlaceAdapter placeAdapter = new DetailPlaceAdapter();
+    public void setUpRecyclerView(List<ServiceApp> serviceApp) {
+        final DetailPersonalAdapter detailPersonalAdapter = new DetailPersonalAdapter();
         recyclerView.setLayoutManager(new LinearLayoutManager(recyclerView.getContext(),
                 LinearLayoutManager.HORIZONTAL, false));
-        recyclerView.setAdapter(placeAdapter);
-        placeAdapter.addItems((ArrayList<CityPlace>) places);
+        recyclerView.setAdapter(detailPersonalAdapter);
+        detailPersonalAdapter.addItems((ArrayList<ServiceApp>) serviceApp);
         RecyclerViewExtensionsKt.OnItemClickListener(recyclerView, new RecyclerViewItemClickListener.OnItemClickListener() {
             @Override public void onItemClick(View view, Integer integer) {
-                CityPlace cityPlace = placeAdapter.getItems().get(integer);
+                ServiceApp service = detailPersonalAdapter.getItems().get(integer);
                 Intent intent = new Intent(recyclerView.getContext(), DetailInformationActivity.class);
-                intent.putExtra("image", cityPlace.getImage());
-                intent.putExtra("name", cityPlace.getAutor());
+                intent.putExtra("image", service.getImage());
+                intent.putExtra("name", service.getName());
                 recyclerView.getContext().startActivity(intent);
             }
         });

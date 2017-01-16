@@ -1,6 +1,7 @@
 package brauliomendez.com.mimonitest.fragment;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -15,6 +16,7 @@ import com.google.gson.Gson;
 import java.util.ArrayList;
 
 import brauliomendez.com.mimonitest.R;
+import brauliomendez.com.mimonitest.activity.DetailInformationActivity;
 import brauliomendez.com.mimonitest.adapter.AccommodationAdapter;
 import brauliomendez.com.mimonitest.model.Accommodation;
 import brauliomendez.com.mimonitest.model.AccommodationResponse;
@@ -45,13 +47,17 @@ public class AccommodationFragment extends Fragment {
     }
 
     private void setUpRecyclerView() {
-        AccommodationAdapter accommodationAdapter = new AccommodationAdapter();
+        final AccommodationAdapter accommodationAdapter = new AccommodationAdapter();
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(accommodationAdapter);
         accommodationAdapter.addItems((ArrayList<Accommodation>) getServices(getActivity()).getAccommodation());
         RecyclerViewExtensionsKt.OnItemClickListener(recyclerView, new RecyclerViewItemClickListener.OnItemClickListener() {
             @Override public void onItemClick(View view, Integer integer) {
-
+                Accommodation accommodation = accommodationAdapter.getItems().get(integer);
+                Intent intent = new Intent(getContext(), DetailInformationActivity.class);
+                intent.putExtra("image", accommodation.getImage());
+                intent.putExtra("name", accommodation.getName());
+                startActivity(intent);
             }
         });
     }

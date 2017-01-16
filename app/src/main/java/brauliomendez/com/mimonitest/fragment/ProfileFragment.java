@@ -54,14 +54,14 @@ public class ProfileFragment extends Fragment {
         profileAdapter.addItems((ArrayList<Profile>) getServices(getActivity()).getProfile());
         RecyclerViewExtensionsKt.OnHeaderAndItemClickListener(recyclerView,
                 new RecyclerViewHeaderClickListener.OnHeaderClickListener() {
-            @Override public void onHeaderClick() {
+                    @Override public void onHeaderClick() {
 
-            }
-        }, new RecyclerViewItemClickListener.OnItemClickListener() {
-            @Override public void onItemClick(View view, Integer integer) {
+                    }
+                }, new RecyclerViewItemClickListener.OnItemClickListener() {
+                    @Override public void onItemClick(View view, Integer integer) {
 
-            }
-        });
+                    }
+                });
     }
 
     public ProfileResponse getServices(Activity activity) {
