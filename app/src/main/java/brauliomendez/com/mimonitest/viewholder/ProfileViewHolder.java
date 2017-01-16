@@ -22,7 +22,7 @@ public class ProfileViewHolder extends EasyItemViewHolder {
         ButterKnife.bind(this, view);
     }
 
-    public void bindItem(Profile profile){
+    public void bindItem(Profile profile) {
         optionProfileTextView.setText(profile.getOption());
     }
 }

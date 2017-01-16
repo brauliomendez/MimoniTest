@@ -21,8 +21,6 @@ import brauliomendez.com.mimonitest.model.PlaceResponse;
 import brauliomendez.com.mimonitest.util.JsonUtil;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import mx.leo.easyrecycler.util.RecyclerViewItemClickListener;
-import mx.leo.easyrecycler.util.extensions.RecyclerViewExtensionsKt;
 
 /**
  * Created by Braulio on 13/01/2017.
@@ -49,11 +47,6 @@ public class PlaceFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(placeAdapter);
         placeAdapter.addItems((ArrayList<Place>) getServices(getActivity()).getPlaces());
-        RecyclerViewExtensionsKt.OnItemClickListener(recyclerView, new RecyclerViewItemClickListener.OnItemClickListener() {
-            @Override public void onItemClick(View view, Integer integer) {
-
-            }
-        });
     }
 
     public PlaceResponse getServices(Activity activity) {

@@ -21,8 +21,6 @@ import brauliomendez.com.mimonitest.model.ExperienceResponse;
 import brauliomendez.com.mimonitest.util.JsonUtil;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import mx.leo.easyrecycler.util.RecyclerViewItemClickListener;
-import mx.leo.easyrecycler.util.extensions.RecyclerViewExtensionsKt;
 
 /**
  * Created by Braulio on 13/01/2017.
@@ -45,15 +43,10 @@ public class ExperienceFragment extends Fragment {
     }
 
     private void setUpRecyclerView() {
-        ExperienceAdapter experiencesAdapter = new ExperienceAdapter();
+        final ExperienceAdapter experiencesAdapter = new ExperienceAdapter();
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(experiencesAdapter);
         experiencesAdapter.addItems((ArrayList<Experience>) getServices(getActivity()).getExperiences());
-        RecyclerViewExtensionsKt.OnItemClickListener(recyclerView, new RecyclerViewItemClickListener.OnItemClickListener() {
-            @Override public void onItemClick(View view, Integer integer) {
-
-            }
-        });
     }
 
     public ExperienceResponse getServices(Activity activity) {

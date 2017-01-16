@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         setUpBottomNavigationView();
-        addFragment(new ServicesFragment());
+        startMainFragment();
     }
 
     private void addFragment(Fragment newFragment) {
@@ -33,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
                 .beginTransaction()
                 .replace(R.id.main_frame_layout, newFragment)
                 .commit();
+    }
+
+    private void startMainFragment() {
+        addFragment(new ServicesFragment());
     }
 
     private void setUpBottomNavigationView() {

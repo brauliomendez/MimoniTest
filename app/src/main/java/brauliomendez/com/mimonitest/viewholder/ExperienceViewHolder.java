@@ -1,5 +1,6 @@
 package brauliomendez.com.mimonitest.viewholder;
 
+import android.content.Intent;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -10,11 +11,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import brauliomendez.com.mimonitest.R;
+import brauliomendez.com.mimonitest.activity.DetailInformationActivity;
 import brauliomendez.com.mimonitest.adapter.DetailExperienceAdapter;
 import brauliomendez.com.mimonitest.model.CityExperience;
 import brauliomendez.com.mimonitest.model.Experience;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import mx.leo.easyrecycler.util.RecyclerViewItemClickListener;
+import mx.leo.easyrecycler.util.extensions.RecyclerViewExtensionsKt;
 import mx.leo.easyrecycler.viewholder.EasyItemViewHolder;
 
 /**
@@ -38,10 +42,19 @@ public class ExperienceViewHolder extends EasyItemViewHolder {
     }
 
     public void setUpDetailRecyclerView(List<CityExperience> experiences) {
-        DetailExperienceAdapter experiencesAdapter = new DetailExperienceAdapter();
+        final DetailExperienceAdapter experiencesAdapter = new DetailExperienceAdapter();
         recyclerView.setLayoutManager(new LinearLayoutManager(recyclerView.getContext(),
                 LinearLayoutManager.HORIZONTAL, false));
         recyclerView.setAdapter(experiencesAdapter);
         experiencesAdapter.addItems((ArrayList<CityExperience>) experiences);
+        RecyclerViewExtensionsKt.OnItemClickListener(recyclerView, new RecyclerViewItemClickListener.OnItemClickListener() {
+            @Override public void onItemClick(View view, Integer integer) {
+                CityExperience cityExperience = experiencesAdapter.getItems().get(integer);
+                Intent intent = new Intent(recyclerView.getContext(), DetailInformationActivity.class);
+                intent.putExtra("image", cityExperience.getImage());
+                intent.putExtra("name", cityExperience.getTitle());
+                recyclerView.getContext().startActivity(intent);
+            }
+        });
     }
 }

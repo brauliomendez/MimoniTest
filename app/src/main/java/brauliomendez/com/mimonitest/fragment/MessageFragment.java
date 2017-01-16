@@ -25,7 +25,7 @@ public class MessageFragment extends Fragment {
         return view;
     }
 
-    @OnClick(R.id.explore_button) void goToMainActivity(){
+    @OnClick(R.id.explore_button) void goToMainActivity() {
         FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
         fragmentManager
                 .beginTransaction()
