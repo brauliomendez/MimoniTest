@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -49,6 +50,7 @@ public class ProfileFragment extends Fragment {
         ProfileAdapter profileAdapter = new ProfileAdapter();
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(profileAdapter);
+        recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(), new LinearLayoutManager(getActivity()).getOrientation()));
         profileAdapter.addItems((ArrayList<Profile>) getServices(getActivity()).getProfile());
         RecyclerViewExtensionsKt.OnHeaderAndItemClickListener(recyclerView,
                 new RecyclerViewHeaderClickListener.OnHeaderClickListener() {
