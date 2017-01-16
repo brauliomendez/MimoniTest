@@ -20,6 +20,11 @@
     <!-- layout_main_adapter Strings -->
     <string name="text_view_more">Ver más</string>
 
+    <!-- fragment_message Strings -->
+    <string name="text_message">Mensajes</string>
+    <string name="text_no_messages">No hay mensajes</string>
+    <string name="text_info_messages">Cuando descubras el alojamiento perfecto, escribe al anfitrión: cuéntale un poco sobre ti y el motivo de tu viaje.</string>
+    <string name="text_button_explore">Empieza a explorar</string>
     <!-- menu_main Strings -->
     <string name="text_explore">Explorar</string>
     <string name="text_saved">Guardados</string>
