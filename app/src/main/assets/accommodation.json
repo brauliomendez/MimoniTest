@@ -1,22 +1,22 @@
 {
   "accommodation": [
     {
-      "image": "valladolid",
+      "image": "https://s-media-cache-ak0.pinimg.com/564x/2b/f4/65/2bf465616de52b905356a284712dc9f6.jpg",
       "price": "$53",
       "name": "Habitacion privada en Barcelona"
     },
     {
-      "image": "valladolid",
+      "image": "https://s-media-cache-ak0.pinimg.com/564x/05/a9/6b/05a96bd0ad02911d1b00bd37d305dd09.jpg",
       "price": "$69",
       "name": "Casa entera en Madrid"
     },
     {
-      "image": "valladolid",
+      "image": "https://s-media-cache-ak0.pinimg.com/564x/9a/fa/b7/9afab71a73fdb828d00348cc6af4129c.jpg",
       "price": "$123",
       "name": "Habitacion compartida en Valladolid"
     },
     {
-      "image": "valladolid",
+      "image": "https://s-media-cache-ak0.pinimg.com/564x/e9/8b/f4/e98bf473b06f1a5925d2af2e4fda5461.jpg",
       "price": "$103",
       "name": "Habitacion privada en Sevilla"
     }

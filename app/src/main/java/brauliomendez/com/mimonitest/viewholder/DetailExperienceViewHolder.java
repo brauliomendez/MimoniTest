@@ -4,6 +4,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import brauliomendez.com.mimonitest.R;
 import brauliomendez.com.mimonitest.model.CityExperience;
 import butterknife.BindView;
@@ -25,6 +27,8 @@ public class DetailExperienceViewHolder extends EasyItemViewHolder {
     }
 
     public void bindItem(CityExperience experience) {
+        Glide.with(detailExperienceImageView.getContext()).load(experience.getImage())
+                .centerCrop().into(detailExperienceImageView);
         detailNameTextView.setText(experience.getTitle());
     }
 }

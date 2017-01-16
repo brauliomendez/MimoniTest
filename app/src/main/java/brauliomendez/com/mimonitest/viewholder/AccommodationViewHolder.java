@@ -28,9 +28,8 @@ public class AccommodationViewHolder extends EasyItemViewHolder {
     }
 
     public void bindItem(Accommodation accommodation) {
-        int id = accommodationImageView.getResources().getIdentifier(accommodation.getImage(), "drawable",
-                accommodationImageView.getContext().getPackageName());
-        Glide.with(accommodationImageView.getContext()).load(id).into(accommodationImageView);
+        Glide.with(accommodationImageView.getContext()).load(accommodation.getImage())
+                .centerCrop().into(accommodationImageView);
         priceTextView.setText(accommodation.getPrice());
         nameTextView.setText(accommodation.getName());
     }
